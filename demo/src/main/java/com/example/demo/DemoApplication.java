@@ -16,14 +16,14 @@ import java.lang.reflect.Field;
 //
 //}
 
-public class DemoApplication{
+public class DemoApplication {
 
     //UserService.class---->构造方法---->对象---->依赖注入(给加了@autoWired属性赋值)---->初始化前(a())     初始化    初始化后(AOP)     Bean
     public static void main(String[] args) {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
 
         // Bean
-        UserService userService=(UserService)context.getBean("userService");
+        UserService userService = (UserService) context.getBean("userService");
 
 
         userService.test();

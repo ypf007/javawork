@@ -12,7 +12,7 @@ public class UserService {
     private OrderService orderService;
 
 
-    public void test(){
+    public void test() {
         System.out.println("test");
     }
 }

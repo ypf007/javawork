@@ -7,7 +7,7 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
 @ComponentScan("com.example.demo")
 @EnableAspectJAutoProxy
 public class AppConfig {
-    public UserService userService(){
+    public UserService userService() {
         return new UserService();
     }
 }
