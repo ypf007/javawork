@@ -17,7 +17,7 @@ public class YupengfeiValueBeanPostProcessor implements BeanPostProcessor {
             if (field.isAnnotationPresent(YupengfeiValue.class)) {
                 field.setAccessible(true);
                 try {
-                    field.set(bean,field.getAnnotation(YupengfeiValue.class).value());
+                    field.set(bean, field.getAnnotation(YupengfeiValue.class).value());
                 } catch (IllegalAccessException e) {
                     e.printStackTrace();
                 }

@@ -60,7 +60,7 @@ public class YupengfeiApplicationContext {
             }
 
             //执行一系列Aware接口
-            if(instance instanceof BeanNameAware){
+            if (instance instanceof BeanNameAware) {
                 ((BeanNameAware) instance).setBeanName(beanName);
             }
 

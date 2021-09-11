@@ -6,7 +6,7 @@ import com.spring.Component;
 @Component
 public class OrderService {
 
-    public void test(){
+    public void test() {
         System.out.println("test");
     }
 
