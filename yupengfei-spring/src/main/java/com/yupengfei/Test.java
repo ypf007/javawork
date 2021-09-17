@@ -1,6 +1,7 @@
 package com.yupengfei;
 
 import com.spring.YupengfeiApplicationContext;
+import com.yupengfei.service.OrderService;
 import com.yupengfei.service.UserInterface;
 import com.yupengfei.service.UserService;
 
@@ -12,8 +13,10 @@ public class Test {
 
         //UserService userService = (UserService) applicationContext.getBean("userService");
         UserInterface userService = (UserInterface) applicationContext.getBean("userService");
+        OrderService orderService = (OrderService) applicationContext.getBean("orderService");
 
         userService.test();
+        orderService.test();
 
 //        System.out.println(applicationContext.getBean("userService"));
 //        System.out.println(applicationContext.getBean("userService"));

@@ -5,7 +5,8 @@ import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
 
-@Component
+//声明式
+//@Component
 public class UserService {
 
     @Autowired
