@@ -5,7 +5,7 @@ import com.spring.*;
 
 @Component("userService")   //value参数，给Bean取一个名字
 @Scope("singleton") //定义作用域
-public class UserService implements InitializingBean,UserInterface, BeanNameAware {
+public class UserService implements InitializingBean, UserInterface, BeanNameAware {
 
     @Autowired
     private OrderService orderService;
@@ -17,7 +17,7 @@ public class UserService implements InitializingBean,UserInterface, BeanNameAwar
 
     @Override
     public void setBeanName(String name) {
-        this.beanName=name;
+        this.beanName = name;
     }
 
     @Override
@@ -25,13 +25,11 @@ public class UserService implements InitializingBean,UserInterface, BeanNameAwar
         System.out.println("初始化");
     }
 
-    public void test(){
+    public void test() {
         System.out.println(orderService);
         System.out.println(test);
         System.out.println(beanName);
     }
-
-
 
 
 }
